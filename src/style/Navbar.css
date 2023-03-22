@@ -1,0 +1,89 @@
+header {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  z-index: 10;
+}
+
+#active {
+  background-color: #e0dddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.main-logo a {
+  text-decoration: none;
+}
+
+.main-logo a .logo {
+  color: #e0dddd;
+  font-size: 22px;
+}
+
+.main-logo a .logo.color {
+  color: #1a1a1a;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+
+.navbar li a.color {
+  color: #1a1a1a;
+}
+.navbar li a {
+  text-decoration: none;
+  color: rgb(238, 233, 233);
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar li a.underline::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: rgb(98, 121, 61);
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar li a.underline:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgb(98, 121, 61);
+  display: block;
+}
+
+.navbar li a.underline.active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgb(98, 121, 61);
+  display: block;
+}
+
+.white {
+  color: rgb(238, 233, 233);
+}
+
+.dark {
+  color: #525456;
+}
