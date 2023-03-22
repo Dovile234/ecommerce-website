@@ -1,0 +1,51 @@
+.newsletter {
+  width: 100%;
+  background-color: rgb(81, 95, 81);
+  padding: 30px 0;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.newsletter-container h4 {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.newsletter-container p {
+  color: rgb(177, 177, 177);
+  font-size: 16px;
+  margin: 0;
+}
+
+.email-input input {
+  padding: 10px;
+  border: none;
+  width: 300px;
+  outline: none;
+}
+
+.email-input button {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.email-input button:hover {
+  background-color: rgb(31, 30, 30);
+}
