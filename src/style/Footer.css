@@ -9,7 +9,7 @@ footer {
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .footer-wrap h6 {
@@ -66,4 +66,5 @@ footer {
 
 .copyright {
   text-align: end;
+  color: grey;
 }

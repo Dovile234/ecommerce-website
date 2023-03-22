@@ -74,7 +74,7 @@ const BestSellers = () => {
 
   return (
     <div className="best-sellers">
-      <h2>Best Sellers</h2>
+      <h2 className="section-title">THE MUST HAVES FOR YOUR LIVING ROOM</h2>
       <div className="products-container">
         {products.map((product, index) => (
           <div key={index} className="product">

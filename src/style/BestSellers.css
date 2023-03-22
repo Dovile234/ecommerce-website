@@ -1,3 +1,11 @@
+.section-title {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  margin: 35px 0;
+  color: rgb(41, 41, 41);
+}
+
 .products-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
