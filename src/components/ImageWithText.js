@@ -7,7 +7,7 @@ const ImageWithText = () => {
     <div>
       <div className="section-wrapper ">
         <div className="text-wrap">
-          <h3>High -quality, long -lasting furniture</h3>
+          <h3>High quality, long lasting furniture</h3>
           <p>
             Fugiat consequat voluptate ea veniam ipsum veniam anim laborum nisi
             sunt. Minim deserunt laboris enim ullamco consectetur cupidatat

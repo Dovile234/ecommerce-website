@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div className="contacts">
             <h6>Contact</h6>
-            <p>Adress: Islandijos pl. 32, 47446 Kaunas</p>
+            <p>Address: Islandijos pl. 32, 47446 Kaunas</p>
             <p>Phone: +37064258935</p>
             <p>Hours: 9:00 - 17:00, Mon - Fri</p>
           </div>
