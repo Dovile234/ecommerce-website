@@ -12,8 +12,8 @@ const Newsletter = () => {
         </p>
       </div>
       <form className="email-input">
-        <input type="email" />
-        <button>
+        <input type="email" required />
+        <button type="submit">
           Subscribe
           <FontAwesomeIcon
             icon={faArrowRight}

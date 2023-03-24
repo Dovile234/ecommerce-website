@@ -47,3 +47,43 @@
   position: relative;
   overflow: hidden;
 }
+
+@media (max-width: 760px) {
+  .title {
+    width: 500px;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 590px) {
+  .hero {
+    background-position: 14% 50%;
+  }
+
+  .title {
+    width: fit-content;
+  }
+
+  .hero-title {
+    margin: 0;
+    line-height: 60px;
+  }
+
+  .hero-button {
+    margin: 0;
+    padding: 5px 18px;
+  }
+}
+
+@media (max-width: 435px) {
+  .hero {
+    height: 600px;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+}

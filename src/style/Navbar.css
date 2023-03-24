@@ -87,3 +87,69 @@ nav {
 .dark {
   color: #525456;
 }
+
+#mobile {
+  display: none;
+  margin-left: auto;
+}
+
+#close {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  #navbar {
+    background-color: rgba(0, 0, 0, 0.952);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  #navbar.active {
+    right: 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 300px;
+    padding: 60px 0 0 10px;
+  }
+
+  .navbar li {
+    margin-bottom: 10px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  #mobile button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  #close {
+    display: flex;
+    position: absolute;
+    top: 30px;
+  }
+
+  #close button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  }
+
+  .navbar li a.color {
+    color: white;
+  }
+}

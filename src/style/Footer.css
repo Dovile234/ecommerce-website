@@ -1,15 +1,20 @@
 footer {
   background-color: #3c3c3c;
-  height: 450px;
   font-weight: 300;
 }
 
 .footer-wrap {
   padding: 60px 0;
   color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.footer-item {
+  width: 25%;
+  padding: 0 15px;
 }
 
 .footer-wrap h6 {
@@ -18,11 +23,27 @@ footer {
   font-weight: 400;
   margin: 10px 0;
 }
+.socials-wrap {
+  width: 15%;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
 
 .socials h5 {
   margin: 10px 4px;
   font-size: 18px;
   font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+.socials-buttons-wrap {
+  display: flex;
 }
 
 .socials button {
@@ -35,6 +56,7 @@ footer {
   width: 30px;
   cursor: pointer;
   color: white;
+  transition: 0.3s;
 }
 
 .socials button:hover {
@@ -51,11 +73,12 @@ footer {
   list-style-type: none;
   padding: 5px 0;
   font-weight: 200;
+  transition: 0.3s;
 }
 
 .account li:hover,
 .about li:hover {
-  text-decoration: underline;
+  margin-left: 5px;
 }
 
 .account li a,
@@ -67,4 +90,26 @@ footer {
 .copyright {
   text-align: end;
   color: grey;
+  margin: 0;
+  padding: 15px 0;
+}
+
+@media (max-width: 760px) {
+  .footer-item {
+    width: 50%;
+  }
+
+  .socials {
+    justify-content: flex-start;
+  }
+
+  .socials h5 {
+    text-align: start;
+  }
+}
+
+@media (max-width: 460px) {
+  .footer-item {
+    width: 100%;
+  }
 }

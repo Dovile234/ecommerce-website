@@ -28,6 +28,10 @@
   margin: 0;
 }
 
+.email-input {
+  display: flex;
+}
+
 .email-input input {
   padding: 10px;
   border: none;
@@ -36,6 +40,8 @@
 }
 
 .email-input button {
+  display: flex;
+  align-items: center;
   padding: 10px 20px;
   border: none;
   background-color: black;
@@ -48,4 +54,81 @@
 
 .email-input button:hover {
   background-color: rgb(31, 30, 30);
+}
+
+@media (max-width: 1145px) {
+  .newsletter-container {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .newsletter {
+    padding: 10px 0;
+  }
+
+  .newsletter-container h4 {
+    font-size: 22px;
+  }
+
+  .email-input input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 770px) {
+  .newsletter-container h4 {
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+
+  .newsletter-container p {
+    font-size: 14px;
+  }
+
+  .newsletter-container {
+    column-gap: 5px;
+  }
+
+  .email-input button {
+    font-size: 12px;
+    padding: 10px 9px;
+  }
+}
+
+@media (max-width: 595px) {
+  .newsletter-container {
+    flex-direction: column;
+  }
+
+  .newsletter-container h4 {
+    margin-bottom: 7px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .email-input input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .email-input button {
+    padding: 8px 5px;
+  }
+
+  .newsletter-container h4 {
+    font-size: 12px;
+  }
+
+  .newsletter-container p {
+    font-size: 11px;
+  }
+
+  .email-input button {
+    font-size: 9px;
+  }
 }
