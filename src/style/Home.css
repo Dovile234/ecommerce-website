@@ -22,26 +22,6 @@
   text-transform: uppercase;
 }
 
-.hero-button {
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 2px solid white;
-  color: white;
-  transition: background-color 0.4s ease-in-out;
-  padding: 8px 35px;
-  text-decoration: none;
-  font-weight: 400;
-  margin-left: 60px;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-.hero-button:hover {
-  background-color: white;
-  border: 2px solid white;
-  color: black;
-  font-weight: 400;
-}
-
 .bg-color {
   background-color: #d8d4d4;
   position: relative;

@@ -1,0 +1,61 @@
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  transition: all 1s;
+}
+
+.image.first {
+  background-position: 50% 48%;
+}
+
+.image.second {
+  background-position: bottom;
+}
+
+.image.third {
+  background-position: 50% 70%;
+}
+
+.slider-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+}
+
+.slider-button a {
+  margin: 0;
+  background-color: rgba(165, 163, 163, 0.678);
+}
+
+.discover-more {
+  text-decoration: none;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+}
+
+.dot {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.current {
+  color: rgb(230, 227, 227);
+}
+
+.grey {
+  color: rgba(128, 128, 128, 0.295);
+}

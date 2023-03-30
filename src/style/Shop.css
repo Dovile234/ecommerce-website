@@ -1,0 +1,69 @@
+.top-section {
+  height: 600px;
+  position: relative;
+}
+
+.arrow {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+.arrow-left {
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+}
+
+.arrow-right {
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+}
+
+.shop-products {
+  margin-top: 60px;
+}
+.pagination-wrap {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pagination-wrap .pagination-button {
+  margin: 0 2px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.pagination-wrap button.active {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+.arrow-button {
+  background-color: transparent;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 370px) {
+  .shop-products {
+    margin-top: 20px;
+  }
+
+  .arrow-left {
+    left: 5px;
+  }
+
+  .arrow-right {
+    right: 5px;
+  }
+}

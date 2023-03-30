@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import BestSellers from "../components/BestSellers";
+import WhiteButton from "../components/WhiteButton";
 import ImageWithText from "../components/ImageWithText";
 import Newsletter from "../components/Newsletter";
 
@@ -10,9 +10,7 @@ const Home = () => {
       <section className="hero">
         <div className="title">
           <h1 className="hero-title">Discover our new products for 2023</h1>
-          <Link href="/shop" className="hero-button">
-            Shop now
-          </Link>
+          <WhiteButton text={"Shop Now"} link={"/shop"} />
         </div>
       </section>
       <section className="container">

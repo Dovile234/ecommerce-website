@@ -4,6 +4,10 @@
 @import "./style/ImageWithText.css";
 @import "./style/Newsletter.css";
 @import "./style/Footer.css";
+@import "./style/ProductsFilter.css";
+@import "./style/Shop.css";
+@import "./style/ImagesSlider.css";
+@import "./style/WhiteButton.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500&display=swap");
 
@@ -33,5 +37,20 @@ p {
 @media (max-width: 920px) {
   .container {
     padding: 0 15px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  margin: 35px 0;
+  color: rgb(41, 41, 41);
+  text-transform: uppercase;
+}
+
+@media (max-width: 370px) {
+  h2 {
+    margin: 10px 0;
   }
 }

@@ -43,7 +43,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   className={navbar ? "underline color" : "underline"}
-                  to="/shop"
+                  to="/shop/all"
                 >
                   Shop
                 </NavLink>

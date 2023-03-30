@@ -7,10 +7,10 @@ import table2 from "../assets/table2.jpg";
 import table3 from "../assets/table3.jpg";
 import mirror from "../assets/mirror.jpg";
 import armchair from "../assets/armchair.jpg";
-import { Link } from "react-router-dom";
+
 import { v4 } from "uuid";
-import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Item from "./Item";
 
 const BestSellers = () => {
   const products = [
@@ -78,29 +78,7 @@ const BestSellers = () => {
       <div className="products-container">
         {products.map((product, index) => (
           <div key={index} className="product">
-            <Link to={`/product/${product.id}`}>
-              <img
-                className="product-image"
-                alt="product"
-                src={product.image}
-              />
-            </Link>
-            <div className="description-wrap">
-              <div className="description">
-                <Link to={`/product/${product.id}`}>{product.title}</Link>
-                <span>{product.price}</span>
-              </div>
-              <p>{product.availability}</p>
-              <button className="add-button">
-                <FontAwesomeIcon
-                  icon={faCirclePlus}
-                  style={{
-                    color: "#414040",
-                  }}
-                  size="2xl"
-                />
-              </button>
-            </div>
+            <Item product={product} />
           </div>
         ))}
       </div>

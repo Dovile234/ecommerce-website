@@ -53,6 +53,7 @@ nav {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar li a.underline::after {
@@ -82,10 +83,22 @@ nav {
 
 .white {
   color: rgb(238, 233, 233);
+  transition: 0.3s;
+}
+
+.white:hover {
+  filter: invert(9%) sepia(21%) saturate(3%) hue-rotate(340deg) brightness(99%)
+    contrast(82%);
 }
 
 .dark {
   color: #525456;
+  transition: 0.3s;
+}
+
+.dark:hover {
+  filter: invert(94%) sepia(79%) saturate(0%) hue-rotate(115deg) brightness(87%)
+    contrast(77%);
 }
 
 #mobile {

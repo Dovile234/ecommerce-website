@@ -1,8 +1,17 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useState } from "react";
 
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+  console.log(email);
+
+  const emailInputHandler = (event) => {
+    event.preventDefault();
+    setEmail("");
+  };
+
   return (
     <div className="newsletter-container">
       <div className="newsletter-text-wrap">
@@ -11,8 +20,13 @@ const Newsletter = () => {
           Get E-mail updates about our exclusive promotions and new collections
         </p>
       </div>
-      <form className="email-input">
-        <input type="email" required />
+      <form onSubmit={emailInputHandler} className="email-input">
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          type="email"
+          required
+        />
         <button type="submit">
           Subscribe
           <FontAwesomeIcon

@@ -1,0 +1,39 @@
+.filter-wrap {
+  width: 100%;
+  background-color: transparent;
+  padding: 5px 0;
+  position: absolute;
+  top: 100px;
+}
+
+.filter {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.filter-list li {
+  list-style-type: none;
+}
+
+.filter-list li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.filter-item .active {
+  text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+  .filter-wrap {
+    font-size: 14px;
+  }
+}
