@@ -7,19 +7,24 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Product from "./pages/Product";
 import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop/:id" element={<Shop />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/product/:item" element={<Product />} />
-      </Routes>
-      <Footer />
+      <ScrollToTop>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop/:id" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/product/:item" element={<Product />} />
+        </Routes>
+        <Newsletter />
+        <Footer />
+      </ScrollToTop>
     </div>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import BestSellers from "../components/BestSellers";
 import WhiteButton from "../components/WhiteButton";
 import ImageWithText from "../components/ImageWithText";
-import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -10,7 +9,7 @@ const Home = () => {
       <section className="hero">
         <div className="title">
           <h1 className="hero-title">Discover our new products for 2023</h1>
-          <WhiteButton text={"Shop Now"} link={"/shop"} />
+          <WhiteButton text={"Shop Now"} link={"/shop/all"} />
         </div>
       </section>
       <section className="container">
@@ -18,9 +17,6 @@ const Home = () => {
       </section>
       <section className="bg-color">
         <ImageWithText />
-      </section>
-      <section className="newsletter">
-        <Newsletter />
       </section>
     </div>
   );

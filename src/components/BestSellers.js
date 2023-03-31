@@ -5,11 +5,8 @@ import chair3 from "../assets/chair3.jpg";
 import table from "../assets/table.jpg";
 import table2 from "../assets/table2.jpg";
 import table3 from "../assets/table3.jpg";
-import mirror from "../assets/mirror.jpg";
+import lighting2 from "../assets/lighting2.jpg";
 import armchair from "../assets/armchair.jpg";
-
-import { v4 } from "uuid";
-
 import Item from "./Item";
 
 const BestSellers = () => {
@@ -19,56 +16,62 @@ const BestSellers = () => {
       price: "99€",
       availability: "in stock",
       image: chair,
-      id: v4,
+      id: 1,
     },
     {
       title: "Light blue chair with ash wood legs",
       price: "99€",
       availability: "in stock",
       image: chair2,
-      id: v4,
+      id: 2,
     },
     {
       title: "Green chair with solid ash wood legs",
       price: "99€",
       availability: "in stock",
       image: chair3,
-      id: v4,
+      id: 3,
     },
     {
       title: "Oak wood desk with metal legs",
       price: "99€",
       availability: "in stock",
       image: table,
-      id: v4,
+      id: 4,
     },
     {
       title: "Solid oak wood coffee table",
       price: "99€",
       availability: "out of stock",
       image: table2,
-      id: v4,
+      id: 5,
     },
     {
       title: "Oak wood desk with metal legs",
       price: "99€",
       availability: "in stock",
       image: table3,
-      id: v4,
-    },
-    {
-      title: "Mirror with natural finish",
-      price: "99€",
-      availability: "in stock",
-      image: mirror,
-      id: v4,
+      id: 6,
     },
     {
       title: "Yellow armchair with dark finish legs",
       price: "99€",
       availability: "in stock",
       image: armchair,
-      id: v4,
+      id: 7,
+      category: "chairs",
+      description:
+        "This armchair is a stylish and comfortable addition to any living space. Its clean lines and modern design make it a versatile piece of furniture that can complement a variety of decor styles.",
+    },
+    {
+      title: "Wall lamp",
+      price: "99€",
+      availability: "in stock",
+      image: lighting2,
+      id: 9,
+      category: "lighting",
+      description:
+        "Hanging lamps can be used in a variety of settings, from kitchens and dining rooms to living rooms and bedrooms. They are versatile and stylish lighting option that can add both functionality and visual appeal to any room in your home.",
     },
   ];
 

@@ -1,9 +1,15 @@
 import React from "react";
-// import { useParams } from "react-router-dom";
+import ProductsArray from "../components/ProductsArray";
+import { useParams } from "react-router-dom";
 
 const Product = () => {
-  // let { id } = useParams();
-  return <div>Product</div>;
+  let { item } = useParams();
+
+  return (
+    <div>
+      <ProductsArray item={item} />
+    </div>
+  );
 };
 
 export default Product;
