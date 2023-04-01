@@ -29,7 +29,7 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(index);
   };
 
-  const scrollHandler = () => window.scrollTo({ top: 420, behavior: "smooth" });
+  const scrollHandler = () => window.scrollTo({ top: 520, behavior: "smooth" });
 
   return (
     <div className="image-wrapper">

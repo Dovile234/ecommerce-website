@@ -171,7 +171,7 @@ const ProductsArray = ({ item }) => {
   };
 
   useEffect(() => {
-    const similarProductsArray = products.splice(1, 5);
+    const similarProductsArray = products.slice(1, 9);
     setSimilarProducts(similarProductsArray);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -269,7 +269,7 @@ const ProductsArray = ({ item }) => {
           <div className="similar-products-wrap">
             <h2>You may also like</h2>
             {similarProducts && (
-              <div className="similar-items">
+              <div className="similar-items snaps-inline">
                 {similarProducts.map((product, index) => (
                   <div className="product similar-item" key={index}>
                     <Item product={product} />

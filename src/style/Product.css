@@ -1,7 +1,6 @@
 .diagonal {
   position: relative;
   isolation: isolate;
-  /* overflow: hidden; */
 }
 
 .diagonal::after {
@@ -23,31 +22,32 @@
 
 .item {
   display: flex;
-  padding-top: 150px;
+  padding: 150px 30px 0;
   margin: 0 auto;
   max-width: 1440px;
   justify-content: space-between;
 }
 
 .item .item-image {
-  height: 700px;
+  height: 650px;
   width: 40%;
-  background-position: center;
   object-fit: cover;
 }
 
 .item-details {
-  width: 55%;
+  width: 43%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 30px;
+  margin: 0 auto;
 }
 
 .item-details h3 {
   font-size: 35px;
   font-weight: 300;
   margin: 0;
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 
 .item-details h3::after {
@@ -85,9 +85,9 @@
 }
 
 .item-details .description {
-  max-width: 450px;
   font-weight: 300;
   color: rgb(180, 180, 180);
+  text-align: justify;
 }
 
 .similar-products-wrap {
@@ -99,11 +99,99 @@
 
 .similar-items {
   padding: 0 30px;
-  /* padding: 50px 0; */
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-auto-columns: 23%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 2rem;
 }
 
 .similar-item {
-  width: 18%;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 1200px) {
+  .item .item-image {
+    height: 550px;
+  }
+
+  .item-details {
+    width: 50%;
+  }
+
+  .similar-items {
+    grid-auto-columns: 32%;
+  }
+}
+
+@media (max-width: 950px) {
+  .item .item-image {
+    height: 450px;
+    width: 50%;
+  }
+
+  .item-details h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  p.description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .item {
+    flex-direction: column;
+    padding: 78px 0 0;
+  }
+
+  .item .item-image {
+    height: 648px;
+    width: 100%;
+    object-position: 50% 60%;
+  }
+  .item-details {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .item-details p {
+    margin-top: 30px;
+  }
+
+  .similar-items {
+    grid-auto-columns: 42%;
+  }
+}
+
+@media (max-width: 580px) {
+  .item .item-image {
+    height: 500px;
+  }
+
+  .similar-items {
+    grid-auto-columns: 65%;
+  }
+}
+
+@media (max-width: 420px) {
+  .similar-items {
+    grid-auto-columns: 93%;
+  }
+
+  .item .item-image {
+    height: 400px;
+  }
+
+  .item-details h3 {
+    font-size: 26px;
+  }
 }
