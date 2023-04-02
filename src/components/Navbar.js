@@ -94,7 +94,8 @@ const Navbar = () => {
               </li>
             </ul>
           </nav>
-          <div id="mobile">
+
+          <div className={navbar ? "dark" : "white"} id="mobile">
             <Link>
               <FontAwesomeIcon
                 className={navbar ? "dark" : "white"}
