@@ -8,9 +8,9 @@ import ProductsResults from "../components/ProductsResults";
 
 const Shop = () => {
   const slides = [
-    { url: image1, id: 0, link: "/shop/lighting", class: "image first" },
-    { url: image2, id: 1, link: "/shop/sofas", class: "image second" },
-    { url: image3, id: 2, link: "/shop/tables", class: "image third" },
+    { url: image3, id: 0, link: "/shop/tables", class: "image third" },
+    { url: image1, id: 1, link: "/shop/lighting", class: "image first" },
+    { url: image2, id: 2, link: "/shop/sofas", class: "image second" },
   ];
 
   return (

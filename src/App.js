@@ -11,6 +11,7 @@ import Newsletter from "./components/Newsletter";
 import ScrollToTop from "./ScrollToTop";
 import Cart from "./pages/Cart";
 import { ShopContextProvider } from "./context/ShopContext";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/product/:item" element={<Product />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Newsletter />
           <Footer />

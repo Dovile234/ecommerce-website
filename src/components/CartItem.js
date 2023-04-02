@@ -1,6 +1,7 @@
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
 const CartItem = (props) => {
@@ -12,7 +13,13 @@ const CartItem = (props) => {
     <div className="cart-item-wrap">
       <img className="cart-item-image" src={image} alt="product" />
       <div className="cart-item">
-        <h3>{title}</h3>
+        <Link
+          className="cart-item-title"
+          to={`/product/${id}`}
+          style={{ textDecoration: "none", color: "black" }}
+        >
+          {title}
+        </Link>
         <div className="count-handler">
           <button onClick={() => removeFromCart(id)}>
             <FontAwesomeIcon icon={faMinus} size="2xs" />

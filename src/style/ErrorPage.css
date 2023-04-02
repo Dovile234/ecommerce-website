@@ -1,0 +1,18 @@
+.bg-image {
+  background-image: url(../assets/bgimage.svg);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
+.error-image-wrapper {
+  width: 600px;
+  margin: 60px auto;
+}
+
+.error-image {
+  width: 600px;
+}
