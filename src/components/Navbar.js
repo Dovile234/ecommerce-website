@@ -4,8 +4,9 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -18,6 +19,10 @@ const Navbar = () => {
       setNavbar(false);
     }
   };
+
+  const { getCartAmount } = useContext(ShopContext);
+
+  const totalCartNumber = getCartAmount();
 
   window.addEventListener("scroll", changeBackground);
 
@@ -64,14 +69,19 @@ const Navbar = () => {
                   Contact
                 </NavLink>
               </li>
-              <li>
-                <Link>
+              <li
+                className={navbar ? "dark" : "white"}
+                style={{ fontSize: "14px" }}
+              >
+                <Link to="/cart">
                   <FontAwesomeIcon
                     className={navbar ? "dark" : "white"}
                     icon={faBagShopping}
                     size="lg"
+                    style={{ paddingRight: "3px" }}
                   />
                 </Link>
+                ({totalCartNumber})
               </li>
               <li id="close">
                 <button onClick={() => setIsOpen(false)}>
@@ -92,6 +102,7 @@ const Navbar = () => {
                 size="lg"
               />
             </Link>
+            ({totalCartNumber})
             <button
               className={navbar ? "dark" : "white"}
               onClick={() => setIsOpen(true)}

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const ProductsFilter = () => {
+const Filter = () => {
   return (
     <div className="filter-wrap">
       <div className="filter">
@@ -27,4 +27,4 @@ const ProductsFilter = () => {
   );
 };
 
-export default ProductsFilter;
+export default Filter;

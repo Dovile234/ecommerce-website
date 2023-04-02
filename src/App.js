@@ -9,22 +9,27 @@ import Product from "./pages/Product";
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
 import ScrollToTop from "./ScrollToTop";
+import Cart from "./pages/Cart";
+import { ShopContextProvider } from "./context/ShopContext";
 
 function App() {
   return (
     <div className="App">
-      <ScrollToTop>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/shop/:id" element={<Shop />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/product/:item" element={<Product />} />
-        </Routes>
-        <Newsletter />
-        <Footer />
-      </ScrollToTop>
+      <ShopContextProvider>
+        <ScrollToTop>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop/:id" element={<Shop />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/product/:item" element={<Product />} />
+          </Routes>
+          <Newsletter />
+          <Footer />
+        </ScrollToTop>
+      </ShopContextProvider>
     </div>
   );
 }

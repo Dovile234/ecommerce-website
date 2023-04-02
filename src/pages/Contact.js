@@ -4,9 +4,20 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const messageHandler = (event) => {
+    event.preventDefault();
+    setMessage("");
+    setEmail("");
+    setName("");
+  };
+
   return (
     <div className="contact-page-wrap">
       <div className="contact-wrap">
@@ -16,9 +27,9 @@ const Contact = () => {
             width="100%"
             height="100%"
             style={{ border: 0 }}
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
             title="myFrame"
           ></iframe>
         </div>
@@ -52,12 +63,33 @@ const Contact = () => {
               MON-FRI 9AM - 6PM
             </p>
           </div>
-          <div className="contact-inputs">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea rows={4} cols={40} placeholder="Message" />
-            <button className="message-button">Send message</button>
-          </div>
+          <form onSubmit={messageHandler} className="contact-inputs">
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <textarea
+              rows={4}
+              cols={40}
+              placeholder="Message"
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button type="submit" className="message-button">
+              Send message
+            </button>
+          </form>
         </div>
       </div>
     </div>

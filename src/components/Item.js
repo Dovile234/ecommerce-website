@@ -10,7 +10,7 @@ const Item = ({ product }) => {
       <div className="description-wrap">
         <div className="description">
           <Link to={`/product/${product.id}`}>{product.title}</Link>
-          <span>{product.price}</span>
+          <span>{product.price}€</span>
         </div>
         <p>{product.availability}</p>
       </div>

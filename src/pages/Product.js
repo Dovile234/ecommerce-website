@@ -1,13 +1,13 @@
 import React from "react";
-import ProductsArray from "../components/ProductsArray";
 import { useParams } from "react-router-dom";
+import ProductsResults from "../components/ProductsResults";
 
 const Product = () => {
   let { item } = useParams();
 
   return (
     <div>
-      <ProductsArray item={item} />
+      <ProductsResults item={item} />
     </div>
   );
 };

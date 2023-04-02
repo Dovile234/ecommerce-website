@@ -1,10 +1,10 @@
 import React from "react";
-import ProductsFilter from "../components/ProductsFilter";
+import Filter from "../components/Filter";
 import ImageSlider from "../components/ImageSlider";
 import image1 from "../assets/top-image1.jpg";
 import image2 from "../assets/top-image2.jpg";
 import image3 from "../assets/top-image3.jpg";
-import ProductsArray from "../components/ProductsArray";
+import ProductsResults from "../components/ProductsResults";
 
 const Shop = () => {
   const slides = [
@@ -19,10 +19,10 @@ const Shop = () => {
         <ImageSlider slides={slides} />
       </div>
       <div>
-        <ProductsFilter />
+        <Filter />
       </div>
       <section className="container">
-        <ProductsArray />
+        <ProductsResults />
       </section>
     </div>
   );

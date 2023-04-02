@@ -141,7 +141,7 @@ nav {
   #mobile {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 4px;
   }
 
   #mobile button {

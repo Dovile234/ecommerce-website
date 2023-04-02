@@ -5,10 +5,12 @@
 .contact-wrap {
   padding-top: 100px;
   display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .map-wrap {
-  width: 50%;
+  width: 70%;
 }
 
 .contact-info-wrap {
@@ -33,24 +35,23 @@
   margin: 40px 0;
 }
 
-.contact-inputs input {
+.contact-inputs input,
+.contact-inputs textarea {
   display: block;
+  background-color: rgba(158, 157, 157, 0.192);
   margin-bottom: 10px;
   width: 100%;
   padding: 8px;
   border-radius: 5px;
-  border: none;
-}
-.contact-inputs textarea {
-  border-radius: 5px;
+  border: 2px solid rgb(167, 164, 164);
+  font-weight: 600;
+  letter-spacing: 1px;
   resize: none;
-  font-size: 16px;
-  padding: 8px;
 }
 
 .message-button {
   display: block;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: rgba(0, 0, 0, 0.158);
   color: white;
   padding: 10px 20px;
