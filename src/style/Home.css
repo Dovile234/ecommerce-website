@@ -28,6 +28,23 @@
   overflow: hidden;
 }
 
+@media (min-width: 2900px) {
+  .hero {
+    height: 1000px;
+    background-position: 50% 50%;
+  }
+
+  .title {
+    margin-left: 200px;
+    margin-top: 70px;
+    width: 900px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+}
+
 @media (max-width: 760px) {
   .title {
     width: 500px;

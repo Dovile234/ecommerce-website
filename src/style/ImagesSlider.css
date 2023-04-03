@@ -59,3 +59,17 @@
 .grey {
   color: rgba(128, 128, 128, 0.295);
 }
+
+@media (min-width: 2900px) {
+  .top-section {
+    height: 800px;
+  }
+
+  .image.third {
+    background-position: 50% 60%;
+  }
+
+  .image.second {
+    background-position: 50% 100%;
+  }
+}
