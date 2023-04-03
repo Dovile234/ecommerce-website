@@ -154,7 +154,8 @@ nav {
   #close {
     display: flex;
     position: absolute;
-    top: 30px;
+    top: 8px;
+    right: 0;
   }
 
   #close button {

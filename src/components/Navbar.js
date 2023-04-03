@@ -88,7 +88,7 @@ const Navbar = () => {
                   <FontAwesomeIcon
                     icon={faXmark}
                     style={{ color: "white" }}
-                    size="xl"
+                    size="2xl"
                   />
                 </button>
               </li>
