@@ -1,7 +1,5 @@
 # React E-commerce website
 
----
-
 ![Alt text](src/assets/banner.jpg)
 
 ### Built width
