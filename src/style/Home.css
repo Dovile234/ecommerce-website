@@ -33,6 +33,13 @@
     height: 1000px;
     background-position: 50% 50%;
   }
+}
+
+@media (min-width: 2500px) {
+  .hero {
+    height: 1000px;
+    background-position: 50% 50%;
+  }
 
   .title {
     margin-left: 200px;
