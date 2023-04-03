@@ -12,10 +12,17 @@ import ScrollToTop from "./ScrollToTop";
 import Cart from "./pages/Cart";
 import { ShopContextProvider } from "./context/ShopContext";
 import ErrorPage from "./pages/ErrorPage";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>FURNITURE.</title>
+        <link rel="canonical" href="https://furninatur.netlify.app/" />
+        <meta name="description" content="Furniture shop" />
+      </Helmet>
       <ShopContextProvider>
         <ScrollToTop>
           <Navbar />
