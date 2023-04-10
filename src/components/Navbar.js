@@ -96,7 +96,7 @@ const Navbar = () => {
           </nav>
 
           <div className={navbar ? "dark" : "white"} id="mobile">
-            <Link>
+            <Link to="/cart">
               <FontAwesomeIcon
                 className={navbar ? "dark" : "white"}
                 icon={faBagShopping}
