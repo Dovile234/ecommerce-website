@@ -8,13 +8,18 @@ import { ShopContext } from "../context/ShopContext";
 
 const Cart = () => {
   const [discount, setDiscount] = useState("");
-  const [isDiscount, setIsDiscount] = useState(false);
+  const [isDiscount, setIsDiscount] = useState();
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
+  console.log(discount);
 
   const discountHandler = (event) => {
     event.preventDefault();
-    setIsDiscount(true);
+    if (discount === "discount10") {
+      setIsDiscount(true);
+    } else {
+      setIsDiscount(false);
+    }
     setDiscount("");
   };
   return (
@@ -62,7 +67,7 @@ const Cart = () => {
                 </p>
                 {isDiscount && (
                   <p className="discount-alert">
-                    Discount <span>-10€</span>
+                    Discount <span>-30%</span>
                   </p>
                 )}
                 <h5>Enter coupon code</h5>
@@ -79,6 +84,10 @@ const Cart = () => {
                 </form>
                 {isDiscount && (
                   <p className="discount-alert">Discount applied</p>
+                )}
+
+                {isDiscount === false && (
+                  <p className="discount-alert">Wrong discount code</p>
                 )}
 
                 <button className="checkout-btn">Checkout</button>
