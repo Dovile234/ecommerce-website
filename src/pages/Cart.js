@@ -11,11 +11,10 @@ const Cart = () => {
   const [isDiscount, setIsDiscount] = useState();
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
-  console.log(discount);
 
   const discountHandler = (event) => {
     event.preventDefault();
-    if (discount === "discount10") {
+    if (discount === "discount30") {
       setIsDiscount(true);
     } else {
       setIsDiscount(false);

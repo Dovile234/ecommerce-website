@@ -4,16 +4,11 @@ import WhiteButton from "../components/WhiteButton";
 import ImageWithText from "../components/ImageWithText";
 
 const Home = () => {
-  const [popup, setPopup] = useState(false);
+  const [popup, setPopup] = useState(true);
   const closeHandler = () => {
-    // document.querySelector(".popup").style.display = "none";
     setPopup(false);
   };
 
-  window.addEventListener("load", () => {
-    // document.querySelector(".popup").style.display = "initial";
-    setPopup(true);
-  });
   return (
     <div>
       <section className="hero">

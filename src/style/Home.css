@@ -135,6 +135,36 @@
   .hero-title {
     font-size: 45px;
   }
+
+  .popup {
+    width: 265px;
+    height: 130px;
+    padding: 17px;
+    padding-top: 10px;
+  }
+
+  .popup h3 {
+    padding-top: 8px;
+    font-size: 46px;
+  }
+
+  .number-wrap {
+    height: 92%;
+  }
+
+  .number-wrap .number {
+    font-size: 70px;
+  }
+
+  .popup div .discount-wrap span {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+
+  .right-section p {
+    bottom: 0;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 590px) {
